@@ -9,9 +9,11 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/reveal-pk.css">
-		<link rel="stylesheet" href="css/theme-pk/black.css" id="theme">
+		<link rel="stylesheet" href="css/theme-pk/simple.css" id="theme">
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script src="https://use.fontawesome.com/217857b264.js"></script>
+
 
 
 		<!-- Printing and PDF exports -->
@@ -23,83 +25,112 @@
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 
+		<style>
+      #player .graph svg{
+        width: 100%;
+        height: 200px;
+      }
+			.small-text {
+				font-size: 12px;
+			}
+			#title {
+				color: #87cb3d;
+			}
+			.hl1 {
+				color: white;
+				background: #87cb3d;
+			}
+			.hl2 {
+				color: white;
+				background: #87cb3d;
+			}
+			#viz {
+				color: red;
+			}
+			.arrows, .fa-arrow-down, .fa-arrow-up {
+				margin-top: 10%;
+			}
+
+			h4 {
+				text-decoration: underline;
+			}
+			ul, li {
+				list-style: none;
+				display: inline-block;
+			}
+			li {
+				padding: 10%;
+				margin.right: 10%;
+			}
+			img {
+				border: 0px;
+				background: white;
+			}
+			.llip {
+				list-style:armenian;
+			}
+
+    </style>
+
 		<!--[if lt IE 9]>
 		<script src="lib/js/html5shiv.js"></script>
 		<![endif]-->
 	</head>
 
-	<body style="background: #131313">
+	<body>
 
 <!-- START -->
 		<div class="reveal"> <!-- 1-->
 			<div class="slides">
 				<section>
-					<h1 style="color: #87cb3d">liQen</h1>
-					<h3>tools for data citizenship</h3>
-					<p>liqen/environment</p>
+					<h1 id="title">liQen</h1>
+					<h4 style="text-decoration:none;">mapping micro-conflicts collecting <span class="fragment highlight-red">experiences</span></h4>
+					<img style="width:150px;height:100px;margin-top:15%;" src="img/logo-caf.png" >
 				</section>
 
 				<section> <!--2 -->
-					<h2 style="color: #87cb3d">2</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
+					<h2 style="color: #87cb3d">Conflicts, Micro and Experiences</h2>
+					<p><span style="color: #5ac8fb">Conflicts  </span><i class="fa fa-caret-right" aria-hidden="true"></i> changes on agency capacity.</p>
+					<p><span style="color: #5ac8fb">Micro-Scale </span><i class="fa fa-caret-right" aria-hidden="true"></i> hiperlocal scale (street corner)</p>
+					<p><span style="color: #5ac8fb">Experiences  </span><i class="fa fa-caret-right" aria-hidden="true"></i> personal narrative (speech, text)</p>
 				</section>
 
-				<section> <!--3 -->
-					<h2 style="color: #87cb3d">3</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
+				<section> <!--2 -->
+					<h2 style="color: #87cb3d">Data</h2>
+					<p style="float:left;color:#1D62F0;">Smart Citizen Sensors</p>
+					<p style="float:right;color:#FF5E3A;">Human Sensor Tool</p>
+					<span class="fragment fade-in"><i class="fa fa-deaf fa-2x" aria-hidden="true"></i><p>Noise Pollution</p></span>
 				</section>
 
-				<section> <!--4-->
-					<h2 style="color: #87cb3d">4</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
-				</section>
-
-				<section> <!--5 -->
-					<h2 style="color: #87cb3d">5</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
-				</section>
-
-				<section> <!--6-->
-					<h2 style="color: #87cb3d">6</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
-				</section>
-
-				<section> <!--7-->
-					<h2 style="color: #87cb3d">7</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
+				<section> <!--2 -->
+					<h2 style="color: #87cb3d">What we have created</h2>
+					<li class="llip"><span style="color: #C7C7CC">Platform - </span></li>
+					<li class="llip"><span style="color: #8E8E93">Visualization/Sonorization - </span></li>
+					<li class="llip"><span style="color: #2B2B2B">Critique</span></li>
 				</section>
 
 				<section> <!--8-->
-					<h2 style="color: #87cb3d">8</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
+					<h2 style="color: #87cb3d">Tour</h2>
+					<p>Let's start <a href="https://crishernandezmaps.github.io/liqen-medialab/dashboard/?device=3675" target="_blank">here <i class="fa fa-hand-o-right" aria-hidden="true"></i></a></p>
 				</section>
+
+				<section> <!--6 -->
+					<h2 style="color: #87cb3d">Critique</h2>
+					<p>3.5 < 35</p>
+					<img class="fragment fade-in" src="http://i.dailymail.co.uk/i/pix/2013/07/03/article-2354580-1AA3C2C7000005DC-463_634x557.jpg">
+				</section>
+
+				<section><!--7 -->
+					<h2 style="color: #87cb3d">Critique</h2>
+					<p>The perception under certain circumstances has an informative value to reduce machine bias.</p>
+					<a href="http://bitly.com/liqen-project"><img src="img/human.jpg" ></a>
+				</section>
+
+
 
 				<section> <!--9-->
-					<h2 style="color: #87cb3d">9</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
-				</section>
-
-				<section> <!--10-->
-					<h2 style="color: #87cb3d">10</h2>
-					<aside class="notes">
-			        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
-			    </aside>
+					<h2 style="color: #87cb3d">Humans are back!</h2>
+					<a href="http://bitly.com/liqen-project">http://bitly.com/liqen-project</a>
 				</section>
 
 			</div>
@@ -118,8 +149,8 @@
 				progress: true,
 				history: true,
 				center: true,
-				autoSlide: 30000,
-				showNotes: true,
+				autoSlide: 3000, //30000
+				showNotes: false,
 
 				transition: 'slide', // none/fade/slide/convex/concave/zoom
 
@@ -135,6 +166,19 @@
 			});
 
 		</script>
+
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="https://tonejs.github.io/CDN/latest/Tone.js"></script>
+    <script src="js/sound.js"></script>
+
+    <script id="audioElement" type="text/javascript">
+    //make the noise and connect it to the output
+    var noise = new Tone.Noise({
+      "volume" : -20,
+      "type" : "brown"
+    }).toMaster();
+  </script>
 
 	</body>
 </html>
